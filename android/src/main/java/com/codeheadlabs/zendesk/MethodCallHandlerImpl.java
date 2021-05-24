@@ -1,4 +1,4 @@
-package android.src.main.java.com.codeheadlabs.zendesk;
+package com.codeheadlabs.zendesk;
 
 import android.app.Activity;
 import android.content.Intent;
