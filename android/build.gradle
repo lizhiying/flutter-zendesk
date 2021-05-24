@@ -3,6 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     repositories {
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         jcenter()
         maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
@@ -10,11 +11,13 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
+//        classpath 'com.android.tools.build:gradle:4.1.0'
     }
 }
 
 rootProject.allprojects {
     repositories {
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         jcenter()
         maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
@@ -27,7 +30,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
